@@ -223,7 +223,7 @@ main .container .left-side .profile{
     border-top-left-radius: var(--card-radius);
     overflow: hidden;
 }
-.left-side .sidebar .menu-item:last-child.active{
+.left-side .sidebar .menu-item:last-child{
     border-bottom-left-radius: var(--card-radius);
     overflow: hidden;
 }
@@ -248,6 +248,7 @@ main .container .left-side .profile{
     padding: var(--card-padding);
     box-shadow: 0 0 2rem hsl(var(--color-primary), 75%, 60%, 25%);
     z-index: 8;
+    display: none;
     
 }
 
@@ -272,3 +273,96 @@ main .container .left-side .profile{
 .left-side .notifications-pop small{
     display: block;
 }
+
+/*====================Middle SIDES=================*/
+
+.center-side .stories{
+    display: flex;
+    justify-content: space-between;
+    height: 12rem;
+    gap: 0.5rem;
+}
+
+.center-side .stories .story{
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 0.75rem;
+    width: 100%;
+    /* background: var(--color-danger); */
+    position: relative;
+    overflow: hidden;
+}
+.center-side .stories .story::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    
+    position: absolute;
+    bottom: 0;
+}
+
+.center-side .stories .story .name{
+    z-index: 2;
+}
+
+.center-side .stories .story:nth-child(1){
+    background: url("/images/imara.jpg") no-repeat center center;
+    background-size: cover;
+}
+.center-side .stories .story:nth-child(2){
+    background: url("/images/nafula.jpg") no-repeat center center;
+    background-size: cover;
+}
+.center-side .stories .story:nth-child(3){
+    background: url("/images/jackie-2.jpg") no-repeat center center;
+    background-size: cover;
+}
+.center-side .stories .story:nth-child(4){
+    background: url("/images/celia.jpg") no-repeat center center;
+    background-size: cover;
+}
+.center-side .stories .story:nth-child(5){
+    background: url("/images/kabambe.jpg") no-repeat center center;
+    background-size: cover;
+}
+.center-side .stories .story:nth-child(6){
+    background: url("/images/katete.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.center-side .stories .profile-picture{
+    width: 2rem;
+    height: 2rem;
+    align-self: start;
+    border: 3px solid var(--color-primary);
+}
+
+.center-side .create-post{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background: #fff;
+    padding: 0.4rem var(--card-padding);
+    border-radius: var(--card-radius);
+}
+
+.center-side .create-post input[type="text"]{
+    justify-self: start;
+    width: 100%;
+    padding-left: 1rem;
+    background: transparent;
+    color: var(--color-dark);
+    margin-right: 1rem;
+}
+
+
+
