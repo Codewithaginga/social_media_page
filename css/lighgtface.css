@@ -419,3 +419,13 @@ main .container .left-side .profile{
 .center-side .liked-by p{
     margin-left: 0.5rem;
 }
+
+
+/*==================Right Side=================*/
+
+main .container .right-side{
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-right);
+    bottom: 0;
+}
